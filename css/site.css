@@ -44,7 +44,7 @@ section.page{padding:40px 0 56px}
 .banner{position:relative;background:#000;border-bottom:1px solid var(--line);overflow:hidden}
 .banner-label{position:absolute;left:16px;top:14px;z-index:3;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px);color:#fff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
 .banner-stage{position:relative;width:100%;aspect-ratio:16/7;max-height:420px;background:#000}
-.banner-stage video{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:auto;height:100%;max-width:100%;object-fit:contain;object-position:center center;opacity:0;transition:opacity .7s ease;background:#000}
+.banner-stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;opacity:0;transition:opacity .7s ease;background:#000}
 .banner-stage video.is-active{opacity:1;z-index:1}
 .banner-dots{position:absolute;right:14px;bottom:12px;z-index:3;display:flex;gap:6px}
 .banner-dots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.35);cursor:pointer;padding:0}
@@ -156,8 +156,8 @@ body.tab section.page>.wrap{background:rgba(11,18,32,.55);backdrop-filter:blur(6
 .hero{position:relative;overflow:hidden;padding:16px 0;border-bottom:1px solid var(--line)}
 .hero-glow{position:fixed;left:0;top:0;width:300px;height:300px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(45,212,191,.18),transparent 70%);z-index:0;transition:transform .12s linear}
 .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 230px;gap:14px;align-items:stretch}
-.hero .banner{border-radius:18px;border:1px solid var(--line);transition:transform .2s}
-.hero .banner-stage{aspect-ratio:auto;height:320px;max-height:none;background:#0a0f14}
+.hero .banner{border-radius:18px;border:1px solid var(--line);transition:transform .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 10px 18px;min-height:340px;background:#070b10}
+.hero .banner-stage{position:relative;width:min(42vw,200px);height:320px;max-height:none;margin:0 auto;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#000}
 .social-side{display:flex;flex-direction:column;gap:6px;background:rgba(24,34,53,.7);border:1px solid var(--line);border-radius:18px;padding:8px}
 .demo-tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .soc{display:flex;gap:8px;align-items:center;padding:3px;border-radius:10px;transition:background .2s,transform .2s}
@@ -175,7 +175,7 @@ body.tab section.page>.wrap{background:rgba(11,18,32,.55);backdrop-filter:blur(6
 .cta-band h2{margin:0}
 @media (max-width:760px){
   .hero-grid{grid-template-columns:1fr}
-  .hero .banner-stage{height:280px}
+  .hero .banner-stage{width:min(56vw,180px);height:300px}
   .social-side{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
   .demo-tag{width:100%}
   .hero-glow{display:none}
