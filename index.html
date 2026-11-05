@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
-<!-- build: hav-site-v6 -->
-<!-- hav-site-v6 -->
+<!-- build: hav-site-v7 -->
+<!-- hav-site-v7 -->
 <meta charset="utf-8">
 <!-- This site is hosted on Netlify. Anyone can build and deploy a site
      like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=5a27c0bb-88bd-4c1a-84da-a9e32a1e6bdd
@@ -263,7 +263,7 @@ footer{padding:40px 0 110px;border-top:1px solid var(--line);color:var(--muted);
 <input type="hidden" name="_subject" id="fs_subject" value="New Helpful AV order">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" id="fs_next" value="https://helpful-av.netlify.app/?ordered=1#order">
+<input type="hidden" name="_next" id="fs_next" value="https://verkerkand-cyber.github.io/helpful-av/?ordered=1#order">
 <p class="hp"><label>Don't fill this out: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
 <label for="bname">Company / business name</label><input id="bname" name="business-name" required>
 <label for="cname">Owner / contact name</label><input id="cname" name="contact-name" required>
@@ -388,7 +388,7 @@ function havSend(f, subject, skipFiles, extra, done){
   var code = agent || "direct", sfx = encodeURIComponent(agent ? "&agent=" + agent : "");
   var ac = document.getElementById("agent_code"); if (ac) ac.value = code;
   var subj = document.getElementById("fs_subject"); if (subj) subj.value = "New Helpful AV order - agent " + code;
-  var nx = document.getElementById("fs_next"); if (nx) nx.value = "https://helpful-av.netlify.app/?ordered=1" + (agent ? "&agent=" + agent : "") + "#order";
+  var nx = document.getElementById("fs_next"); if (nx) nx.value = "https://verkerkand-cyber.github.io/helpful-av/?ordered=1" + (agent ? "&agent=" + agent : "") + "#order";
   var oa = document.getElementById("orderAgent"); if (oa && agent) { oa.textContent = "Agent code: " + agent; oa.style.display = "block"; }
   var f = document.getElementById("orderform"), LIMIT = 25*1024*1024;
   if (f) {
