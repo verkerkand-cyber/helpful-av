@@ -74,11 +74,10 @@
     var idx = 0;
     vids.forEach(function (v, i) {
       v.muted = true;
-      v.loop = false;
+      v.loop = true;
       v.playsInline = true;
       v.setAttribute("playsinline", "");
       v.setAttribute("muted", "");
-      v.addEventListener("ended", function () { go(idx + 1, false); });
       if (dotsWrap) {
         var b = document.createElement("button");
         b.type = "button";
@@ -104,9 +103,16 @@
           d.classList.toggle("on", i === idx);
         });
       }
+      if (user) restart();
+    }
+    var timer = null;
+    function restart() {
+      if (timer) clearInterval(timer);
+      timer = setInterval(function () { go(idx + 1, false); }, 3500);
     }
     if (vids.length) {
       go(0, false);
+      restart();
     }
   }
 
