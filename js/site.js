@@ -1,6 +1,6 @@
-/* Helpful AV shared site JS — hav-site-v10 */
+/* Helpful AV shared site JS — hav-site-v24 */
 (function () {
-  var WA = "27665298510";
+  var WA = "27662392340";
   var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxUXB-qiQsHxUA3JhO_7IqDkiXPuwrjza_fKPRGfzL0ySULdXQrx7Ob81vVAQVcq6ah/exec";
   window.HAV_SCRIPT_URL = SCRIPT_URL;
 
@@ -31,7 +31,7 @@
   }
 
   document.querySelectorAll(".js-wa").forEach(function (a) {
-    var msg = a.getAttribute("data-msg") || "Hi Andrew";
+    var msg = a.getAttribute("data-msg") || "Hi Jayden";
     if (agent && msg.indexOf("AGENT -") !== 0) msg += " (Agent code: " + agent + ")";
     a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
     a.target = "_blank";
