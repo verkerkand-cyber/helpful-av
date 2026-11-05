@@ -1,4 +1,4 @@
-/* Helpful AV shared site JS — hav-site-v9 */
+/* Helpful AV shared site JS — hav-site-v10 */
 (function () {
   var WA = "27665298510";
   var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxUXB-qiQsHxUA3JhO_7IqDkiXPuwrjza_fKPRGfzL0ySULdXQrx7Ob81vVAQVcq6ah/exec";
@@ -55,6 +55,16 @@
       a.addEventListener("click", function () { nav.classList.remove("open"); });
     });
   }
+
+  // Funky: cursor glow + tilt on home
+  var glow=document.querySelector(".hero-glow");
+  if(glow){document.addEventListener("mousemove",function(e){glow.style.transform="translate("+(e.clientX-150)+"px,"+(e.clientY-150)+"px)";});}
+  document.querySelectorAll(".tilt").forEach(function(el){
+    el.addEventListener("mousemove",function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform="perspective(800px) rotateY("+x*5+"deg) rotateX("+(-y*5)+"deg)";});
+    el.addEventListener("mouseleave",function(){el.style.transform="";});
+  });
+  if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});},{threshold:.1});
+    document.querySelectorAll(".card,.sample,.stats>div").forEach(function(el){el.classList.add("reveal");io.observe(el);});}
 
   // Hero banner rotation
   var stage = document.getElementById("bannerStage");
@@ -124,7 +134,7 @@
   }
 
   // Autoplay muted loops in social strip
-  document.querySelectorAll(".phone-frame video").forEach(function (v) {
+  document.querySelectorAll(".mini video").forEach(function (v) {
     v.muted = true;
     v.loop = true;
     v.playsInline = true;
