@@ -134,7 +134,7 @@
   }
 
   // Autoplay muted loops in social strip
-  document.querySelectorAll(".mini video").forEach(function (v) {
+  document.querySelectorAll(".card-phone video, .mini video").forEach(function (v) {
     v.muted = true;
     v.loop = true;
     v.playsInline = true;
