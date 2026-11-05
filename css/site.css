@@ -44,7 +44,7 @@ section.page{padding:40px 0 56px}
 .banner{position:relative;background:#000;border-bottom:1px solid var(--line);overflow:hidden}
 .banner-label{position:absolute;left:16px;top:14px;z-index:3;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px);color:#fff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
 .banner-stage{position:relative;width:100%;aspect-ratio:16/7;max-height:420px;background:#000}
-.banner-stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;opacity:0;transition:opacity .7s ease;background:#000}
+.banner-stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;opacity:0;transition:opacity .7s ease;background:#000}
 .banner-stage video.is-active{opacity:1;z-index:1}
 .banner-dots{position:absolute;right:14px;bottom:12px;z-index:3;display:flex;gap:6px}
 .banner-dots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.35);cursor:pointer;padding:0}
