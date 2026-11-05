@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://verkerkand-cyber.github.io/helpful-av/sitemap.xml
