@@ -2,419 +2,145 @@
 <html lang="en-ZA">
 <head>
 <meta name="google-site-verification" content="1bLGO5rfy8AbWthwLzcn-S9dSrTKiQFUab5hB_pKPio" />
-<!-- build: hav-site-v8 -->
-<!-- hav-site-v8 -->
+<!-- hav-site-v9 -->
 <meta charset="utf-8">
-<!-- This site is hosted on Netlify. Anyone can build and deploy a site
-     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=5a27c0bb-88bd-4c1a-84da-a9e32a1e6bdd
-     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Helpful AV | Website + 15 Video Shorts for R2,000</title>
-<meta name="description" content="Get your business online: a professional website, 15 ready-to-post video Shorts and printable forms with your logo, for R2,000 once-off. South Africa.">
-<meta property="og:title" content="Helpful AV | Your business online for R2,000">
-<meta property="og:description" content="Website + 15 video Shorts + printable forms. Ready in 7 days.">
-<meta property="og:image" content="videos/sample-1.jpg">
+<title>Home | Helpful AV</title>
+<meta name="description" content="Websites and video Shorts for South African small businesses. Website + 15 Shorts for R2,000. Print pack R750.">
+<meta property="og:title" content="Home | Helpful AV">
+<meta property="og:description" content="Websites and video Shorts for South African small businesses. Website + 15 Shorts for R2,000. Print pack R750.">
+<link rel="icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#0f1115; --ink2:#1a1d24; --card:#20242d; --line:#2e3340;
-  --text:#f3f4f6; --muted:#a8afbd; --lime:#c6f432; --lime-d:#a5cc1f;
-  --wa:#25d366; --radius:18px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:"Archivo Black",Inter,sans-serif;font-weight:400;line-height:1.05;letter-spacing:-.01em}
-h2{font-size:clamp(28px,5vw,44px);margin-bottom:14px}
-.kicker{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin-bottom:12px}
-.lead{color:var(--muted);font-size:18px;max-width:640px}
-section{padding:72px 0;border-top:1px solid var(--line)}
+<link rel="stylesheet" href="css/site.css">
 
-/* nav */
-.nav{position:sticky;top:0;z-index:20;background:rgba(15,17,21,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{font-family:"Archivo Black";font-size:20px;text-decoration:none}
-.logo span{color:var(--lime)}
-.nav-cta{background:var(--wa);color:#08210f;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:999px;font-size:14px}
-
-/* buttons */
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;border-radius:14px;padding:16px 22px;font-size:17px;border:0;cursor:pointer}
-.btn-wa{background:var(--wa);color:#08210f}
-.btn-ghost{background:transparent;color:var(--text);border:2px solid var(--line)}
-.btn svg{width:22px;height:22px}
-
-/* hero */
-.hero{padding:56px 0 64px}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(40px,8vw,76px)}
-.hero h1 em{font-style:normal;color:var(--lime)}
-.price-tag{display:inline-flex;align-items:baseline;gap:10px;margin:22px 0 8px;background:var(--lime);color:var(--ink);padding:10px 18px;border-radius:14px;transform:rotate(-1.5deg)}
-.price-tag b{font-family:"Archivo Black";font-size:40px;line-height:1}
-.price-tag small{font-weight:700;font-size:15px}
-.hero-list{list-style:none;margin:18px 0 28px;display:grid;gap:8px}
-.hero-list li{display:flex;gap:10px;align-items:flex-start;font-size:17px}
-.tick{flex:none;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-weight:900;font-size:13px;margin-top:2px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.hero-phones{position:relative;height:480px}
-.phone{position:absolute;width:210px;aspect-ratio:416/752;border-radius:26px;overflow:hidden;border:6px solid #000;box-shadow:0 30px 60px rgba(0,0,0,.55)}
-.phone img{width:100%;height:100%;object-fit:cover;display:block}
-.phone.p1{left:6%;top:30px;transform:rotate(-7deg)}
-.phone.p2{right:6%;top:0;transform:rotate(5deg);z-index:2}
-
-/* samples */
-.samples{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:30px}
-.sample{background:var(--card);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
-.sample video{width:100%;aspect-ratio:416/752;display:block;background:#000;object-fit:cover}
-.sample p{padding:10px 12px;font-size:14px;font-weight:600}
-.sample p span{display:block;color:var(--muted);font-weight:400;font-size:12px}
-.note{color:var(--muted);font-size:14px;margin-top:14px}
-
-/* example site */
-.example{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.browser{background:#fff;border-radius:12px;overflow:hidden;color:#111}
-.browser .bar{background:#e8e8ea;padding:8px 12px;display:flex;gap:6px;align-items:center}
-.browser .bar i{width:10px;height:10px;border-radius:50%;background:#c9c9cc;display:block}
-.browser .bar span{margin-left:10px;font-size:12px;color:#555;background:#fff;border-radius:6px;padding:3px 10px}
-.browser .shot{padding:22px;background:linear-gradient(135deg,#121212,#2a0c0c);color:#fff}
-.browser .shot b{font-family:"Archivo Black";font-size:24px;display:block;margin-bottom:6px}
-.browser .shot .pill{display:inline-block;background:#d62828;color:#fff;border-radius:8px;padding:8px 12px;font-weight:700;font-size:13px;margin:10px 6px 0 0}
-.browser .shot .pill.g{background:#25d366;color:#05210f}
-
-/* cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-.card.feature{border:2px solid var(--lime)}
-.card h3{font-size:22px;margin-bottom:6px}
-.card .amt{font-family:"Archivo Black";font-size:34px;color:var(--lime);margin:8px 0}
-.card .amt small{font-family:Inter;font-size:14px;color:var(--muted);font-weight:600}
-.card ul{list-style:none;display:grid;gap:7px;margin-top:12px;font-size:15px}
-.card li::before{content:"✓ ";color:var(--lime);font-weight:900}
-.badge{display:inline-block;background:var(--lime);color:var(--ink);font-size:12px;font-weight:800;border-radius:999px;padding:3px 10px;letter-spacing:.04em}
-
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;counter-reset:s}
-.step{background:var(--ink2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:relative}
-.step::before{counter-increment:s;content:counter(s);font-family:"Archivo Black";font-size:44px;color:var(--lime);display:block;line-height:1;margin-bottom:8px}
-.need{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
-.need span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px}
-
-/* faq */
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:10px}
-summary{font-weight:700;cursor:pointer;list-style:none}
-summary::after{content:"+";float:right;color:var(--lime);font-weight:900}
-details[open] summary::after{content:"–"}
-details p{color:var(--muted);margin-top:8px}
-
-/* agent */
-.agent{background:linear-gradient(135deg,#1c2410,#0f1115 60%);border:2px solid var(--lime);border-radius:24px;padding:36px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
-.earn{display:grid;gap:10px}
-.earn div{background:rgba(0,0,0,.35);border-radius:14px;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font-size:15px}
-.earn b{color:var(--lime);font-family:"Archivo Black";font-size:20px;white-space:nowrap}
-
-/* footer */
-footer{padding:40px 0 110px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-.agent-chip{display:none;margin-top:10px;color:var(--lime);font-weight:700}
-.float-wa{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 30px rgba(0,0,0,.5)}
-
-@media (max-width:900px){
-  .hero-grid,.example,.agent{grid-template-columns:1fr}
-  .hero-phones{height:330px}
-  .phone{width:150px}
-  .samples{grid-template-columns:repeat(2,1fr)}
-  .samples .sample:last-child{grid-column:1/-1;max-width:50%;justify-self:center;width:100%}
-  .cards,.steps{grid-template-columns:1fr}
-}
-/* business products + order form */
-.biz{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.biz .card{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.biz .card img{width:100%;height:auto;display:block}
-.biz .card .b{padding:22px;display:flex;flex-direction:column;flex:1}
-.biz .card .btn{margin-top:auto;justify-content:center}
-.order{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:26px}
-.order label{display:block;font-weight:700;margin:14px 0 6px}
-.order input,.order select,.order textarea{width:100%;box-sizing:border-box;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--ink2);color:inherit;font:inherit}
-.order input[type=file]{margin-bottom:6px}
-.order small{opacity:.7}.order button{margin-top:16px;border:0;cursor:pointer;width:100%;justify-content:center}
-.hp{display:none}.thanks{background:#1c2410;border-left:4px solid var(--lime);padding:14px;border-radius:10px;margin-top:20px}
-@media(max-width:760px){.biz{grid-template-columns:1fr}}
-</style>
 </head>
 <body>
-
-<nav class="nav"><div class="wrap">
-  <a class="logo" href="#top">Helpful<span>AV</span></a>
-  <a class="nav-cta js-wa" href="#" data-msg="Hi Andrew, I'd like the R2,000 Starter Pack (website + 15 Shorts).">WhatsApp us</a>
+<nav class="nav"><div class="wrap nav-inner">
+  <a class="logo" href="index.html">Helpful<span>AV</span></a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-tabs">
+      <a href="index.html" class="active">Home</a>
+      <a href="website.html">Website + 15 Shorts</a>
+      <a href="flyer.html">Flyer & print pack</a>
+      <a href="pitch.html">Sales pitch</a>
+      <a href="commissions.html">Commissions</a>
+      <a href="other-websites.html">Other websites</a>
+      <a href="order.html">Order form</a>
+      <a href="buy.html">Buy / pay</a>
+      <a href="contact.html">Contact us</a>
+  </div>
+  <a class="nav-cta js-wa" href="#" data-msg="Hi Andrew, I'd like to chat about Helpful AV.">WhatsApp</a>
 </div></nav>
-
-<header class="hero" id="top"><div class="wrap hero-grid">
-  <div>
-    <span class="kicker">For every small business in South Africa</span>
-    <h1>Get your business <em>online</em> and seen.</h1>
-    <div class="price-tag"><b>R2,000</b><small>once-off</small></div>
-    <ul class="hero-list">
-      <li><span class="tick">✓</span>A professional website that works on every phone</li>
-      <li><span class="tick">✓</span>15 ready-to-post video Shorts about your business</li>
-      <li><span class="tick">✓</span>Printable quote and invoice forms with your logo</li>
-      <li><span class="tick">✓</span>Ready in 7 days</li>
-    </ul>
-    <div class="cta-row">
-      <a class="btn btn-wa js-wa" href="#" data-msg="Hi Andrew, I'd like the R2,000 Starter Pack (website + 15 Shorts).">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
-        Order on WhatsApp
-      </a>
-      <a class="btn btn-ghost" href="#samples">See sample videos</a>
-    </div>
+<div class="banner" aria-label="Helpful AV Shorts banner">
+  <div class="banner-label">Helpful AV Shorts</div>
+  <div class="banner-stage" id="bannerStage">
+    <video src="videos/sample-1.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-2.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-3.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-4.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-5.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short1.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short2.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short3.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short4.mp4" muted loop playsinline preload="metadata"></video>
   </div>
-  <div class="hero-phones" aria-hidden="true">
-    <div class="phone p1"><img src="videos/sample-3.jpg" alt=""></div>
-    <div class="phone p2"><img src="videos/sample-1.jpg" alt=""></div>
-  </div>
-</div></header>
-
-<section id="samples"><div class="wrap">
-  <span class="kicker">Sample Shorts</span>
-  <h2>Videos like these, made for your business</h2>
-  <p class="lead">Each Short is 15 seconds, made for Facebook, TikTok, Instagram and WhatsApp Status. Tap a video to play it with sound.</p>
-  <div class="samples">
-    <div class="sample"><video src="videos/sample-1.mp4" poster="videos/sample-1.jpg" controls playsinline preload="none"></video><p>Arrival &amp; inspection<span>Workshop sample</span></p></div>
-    <div class="sample"><video src="videos/sample-2.mp4" poster="videos/sample-2.jpg" controls playsinline preload="none"></video><p>Oil service<span>Workshop sample</span></p></div>
-    <div class="sample"><video src="videos/sample-3.mp4" poster="videos/sample-3.jpg" controls playsinline preload="none"></video><p>Brakes<span>Workshop sample</span></p></div>
-    <div class="sample"><video src="videos/sample-4.mp4" poster="videos/sample-4.jpg" controls playsinline preload="none"></video><p>Diagnostics<span>Workshop sample</span></p></div>
-    <div class="sample"><video src="videos/sample-5.mp4" poster="videos/sample-5.jpg" controls playsinline preload="none"></video><p>Engine repairs<span>Workshop sample</span></p></div>
-  </div>
-  <p class="note">Samples made for a real workshop client. Yours will show your own business, services and contact details.</p>
-</div></section>
-
-<section id="example"><div class="wrap">
-  <span class="kicker">Example website</span>
-  <h2>A real site we built</h2>
-  <div class="example">
-    <div class="browser" aria-hidden="true">
-      <div class="bar"><i></i><i></i><i></i><span>alastairs-car-care.netlify.app</span></div>
-      <div class="shot">
-        <b>Toyota specialists in Vereeniging</b>
-        Services, booking, directions and call buttons, all on one page.
-        <div><span class="pill g">Book on WhatsApp</span><span class="pill">Call now</span><span class="pill">Directions</span></div>
+  <div class="banner-dots" id="bannerDots" aria-hidden="true"></div>
+</div>
+<div class="social-strip">
+  <div class="wrap">
+    <p class="kicker" style="text-align:center;display:block">Marketing demo</p>
+    <div class="social-grid">
+    <div class="social-col">
+      <h3>YouTube</h3>
+      <div class="phone-frame">
+        <video src="videos/sample-1.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="view-count"><span>Views</span><b data-views="1842">0</b></div>
       </div>
     </div>
-    <div>
-      <p class="lead" style="margin-bottom:18px">A workshop in Duncanville, Vereeniging. Customers book on WhatsApp in 30 seconds, check if their car is covered, and get directions with one tap.</p>
-      <a class="btn btn-ghost" href="https://alastairs-car-care.netlify.app" target="_blank" rel="noopener">Open the live site ↗</a>
+    <div class="social-col">
+      <h3>TikTok</h3>
+      <div class="phone-frame">
+        <video src="videos/short1.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="view-count"><span>Views</span><b data-views="3260">0</b></div>
+      </div>
     </div>
+    <div class="social-col">
+      <h3>Instagram</h3>
+      <div class="phone-frame">
+        <video src="videos/sample-3.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="view-count"><span>Views</span><b data-views="2514">0</b></div>
+      </div>
+    </div>
+    </div>
+    <p class="caption">What your Shorts can look like as views grow · Demo only — not live stats for a named account</p>
   </div>
-</div></section>
+</div>
 
-<section id="prices"><div class="wrap">
-  <span class="kicker">Prices</span>
-  <h2>Start once. Keep marketing monthly.</h2>
-  <div class="cards">
+<section class="page"><div class="wrap">
+  <span class="kicker">Helpful AV · South Africa</span>
+  <h1>Websites &amp; Shorts that help small businesses get found.</h1>
+  <p class="lead" style="margin-top:14px">We build a clear mobile website and a set of ready-to-post video Shorts so customers can call, WhatsApp or find you fast. Plain language, once-off prices, built for SA small businesses.</p>
+  <div class="cards" style="margin-top:28px">
     <div class="card feature">
-      <span class="badge">START HERE</span>
-      <h3 style="margin-top:10px">Starter Pack</h3>
+      <span class="badge">MOST POPULAR</span>
+      <h3 style="margin-top:10px">Website + 15 Shorts</h3>
       <div class="amt">R2,000 <small>once-off</small></div>
       <ul>
-        <li>Website with WhatsApp booking, call &amp; directions</li>
-        <li>Hosting included</li>
-        <li>15 video Shorts + posting calendar + captions</li>
-        <li>Printable quote &amp; invoice forms with your logo</li>
-        <li>One round of changes</li>
+        <li>Mobile-friendly business website</li>
+        <li>15 × ~15s Shorts with phone &amp; email in the voiceover</li>
+        <li>Ready to post on Facebook, TikTok, Instagram &amp; WhatsApp Status</li>
       </ul>
-    </div>
-    <div class="card">
-      <h3>Shorts Monthly 15</h3>
-      <div class="amt">R500 <small>/ month</small></div>
-      <ul>
-        <li>15 new Shorts every month</li>
-        <li>One post every second day</li>
-        <li>Calendar + captions</li>
-        <li>Cancel any time</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Shorts Monthly Full</h3>
-      <div class="amt">R800 <small>/ month</small></div>
-      <ul>
-        <li>30 new Shorts every month</li>
-        <li>A fresh post every day</li>
-        <li>Calendar + captions</li>
-        <li>Cancel any time</li>
-      </ul>
-    </div>
-  </div>
-  <p class="note">Optional extras: your own .co.za web address (about R100–R200 a year, at cost) and printed carbon-copy form books (quoted per order).</p>
-</div></section>
-
-
-<section id="business"><div class="wrap">
-  <span class="kicker">Order online</span>
-  <h2>Business products by Helpful AV</h2>
-  <div class="biz">
-    <div class="card"><img src="print-pack-v2.jpg" alt="Business Print Pack: carbon books" loading="lazy"><div class="b"><h3>Business Print Pack</h3><p class="lead" style="font-size:16px">Print-ready PDF files of custom business forms (job cards, quotes, invoices, carbon-book-ready layouts), plus business cards and letterhead with your branding.</p><div class="amt">R750 <small>once-off</small></div><a class="btn btn-wa" href="#order" onclick="document.getElementById('product').value='Business Print Pack (R750)'">Order &amp; upload your details</a></div></div>
-    <div class="card"><img src="website-shorts.jpg" alt="Website + 15 Video Shorts: site and Shorts preview" loading="lazy"><div class="b"><h3>Website + 15 Video Shorts</h3><p class="lead" style="font-size:16px">A mobile-friendly one-page business website plus 15 promo Shorts of about 15 seconds each, with a voiceover giving your phone number and email.</p><div class="amt">R2,000 <small>once-off</small></div><a class="btn btn-wa" href="#order" onclick="document.getElementById('product').value='Website + 15 Video Shorts (R2,000)'">Order &amp; upload your details</a></div></div>
-  </div>
-  <div id="order" style="margin-top:30px"><h3>Order form</h3><p class="agent-chip" id="orderAgent"></p>
-<div id="thanks" class="thanks" hidden><strong>Thank you for your order!</strong> We have received your details. Payment details will be sent to you by email shortly.</div>
-<div id="bigthanks" class="thanks" hidden><strong>Thank you for your order!</strong> Your details were sent. Your files were too large, so we will call you to collect them.</div>
-<form class="order" id="orderform" name="business-order" method="POST" action="https://formsubmit.co/verkerkand@gmail.com" enctype="multipart/form-data">
-<input type="hidden" name="agent-code" id="agent_code" value="direct">
-<input type="hidden" name="_subject" id="fs_subject" value="New Helpful AV order">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" id="fs_next" value="https://verkerkand-cyber.github.io/helpful-av/?ordered=1#order">
-<p class="hp"><label>Don't fill this out: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
-<label for="bname">Company / business name</label><input id="bname" name="business-name" required>
-<label for="cname">Owner / contact name</label><input id="cname" name="contact-name" required>
-<label for="phone">Cell number</label><input id="phone" name="cell-number" type="tel" required pattern="[0-9+ ()-]{9,}" title="Please enter a valid cell number">
-<label for="email">Email address</label><input id="email" name="email" type="email" required>
-<input type="hidden" name="files-too-big" id="fs_toobig" value="none" disabled>
-<label for="product">Product</label><select id="product" name="product" required><option value="">Choose a product</option><option>Business Print Pack (R750)</option><option>Website + 15 Video Shorts (R2,000)</option></select>
-<label for="addr">Physical address</label><textarea id="addr" name="address" rows="2"></textarea>
-<label for="links">Website / social links</label><textarea id="links" name="links" rows="2"></textarea>
-<label for="services">Services offered</label><textarea id="services" name="services" rows="3"></textarea>
-<label for="docs">Forms or documents needed</label><textarea id="docs" name="documents-needed" rows="3" placeholder="e.g. job cards, quotes, invoices, business cards, letterhead"></textarea>
-<label for="colours">Preferred colours</label><input id="colours" name="colours">
-<label for="notes">Any other notes</label><textarea id="notes" name="notes" rows="3"></textarea>
-<label for="logo">Logo upload <small>(all files together max 25MB)</small></label><input id="logo" name="logo" type="file" accept="image/*,.pdf,.svg">
-<label for="photo1">Photos of your business, work, vehicles or existing documents (5 to 10 photos) <small>(all files together max 25MB)</small></label><input id="photo1" name="photo1" type="file" accept="image/*,.pdf,.doc,.docx"><input id="photo2" name="photo2" type="file" accept="image/*,.pdf,.doc,.docx"><input id="photo3" name="photo3" type="file" accept="image/*,.pdf,.doc,.docx"><input id="photo4" name="photo4" type="file" accept="image/*,.pdf,.doc,.docx"><input id="photo5" name="photo5" type="file" accept="image/*,.pdf,.doc,.docx"><input id="photo6" name="photo6" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden><input id="photo7" name="photo7" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden><input id="photo8" name="photo8" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden><input id="photo9" name="photo9" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden><input id="photo10" name="photo10" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden><button type="button" class="btn btn-ghost" id="addphotos" onclick="[].forEach.call(document.querySelectorAll('.morephoto'),function(i){i.hidden=false;});this.hidden=true;">Add more photos</button><p><small>Tip: phone photos are big, so if they're too large we'll call you to collect them.</small></p>
-<button class="btn btn-wa" type="submit">Submit order</button>
-</form></div>
-</div></section>
-
-<section id="how"><div class="wrap">
-  <span class="kicker">How it works</span>
-  <h2>Live in 7 days</h2>
-  <div class="steps">
-    <div class="step"><h3>WhatsApp us</h3><p class="lead" style="font-size:16px">Tell us about your business. We answer your questions, no pressure.</p></div>
-    <div class="step"><h3>Send your details</h3><p class="lead" style="font-size:16px">Pay and send your logo, photos and info. A photo of your logo is fine.</p></div>
-    <div class="step"><h3>Go live</h3><p class="lead" style="font-size:16px">Your website goes live and your 15 Shorts arrive, ready to post.</p></div>
-  </div>
-  <p style="margin-top:26px;font-weight:700">What we need from you:</p>
-  <div class="need">
-    <span>Business name &amp; logo</span><span>Contact number &amp; email</span><span>Address &amp; areas you serve</span><span>What you do (and don't do)</span><span>Opening hours</span><span>5–10 photos of your work</span>
-  </div>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <span class="kicker">Questions</span>
-  <h2>Good to know</h2>
-  <details><summary>Is there a monthly fee for the website?</summary><p>No. The website is once-off and hosting is included. The monthly Shorts are optional.</p></details>
-  <details><summary>Who posts the videos?</summary><p>You do, from your own phone or page. You get a posting calendar and a ready-made caption for every Short.</p></details>
-  <details><summary>Do I need my own web address?</summary><p>Your site works on a free address straight away. A .co.za address of your own costs about R100–R200 a year extra, at cost.</p></details>
-  <details><summary>How do I pay?</summary><p>By EFT or a secure payment link, before work starts. Monthly Shorts are paid in advance each month.</p></details>
-  <details><summary>Can I make changes later?</summary><p>One round of changes is included. Bigger changes later are quoted first.</p></details>
-</div></section>
-
-<section id="agents"><div class="wrap">
-  <div class="agent">
-    <div>
-      <span class="kicker">Looking for work?</span>
-      <h2>Earn money as a Helpful AV agent</h2>
-      <p class="lead">Show local businesses what we do and earn commission on every sale. No experience needed: you get the price list, samples and what to say.</p>
-      <p class="note" style="color:#d6dccb">Commission only, no salary. Free to join, we'll never ask you for money. 18+ only. Paid by EFT within 7 days of your client's payment.</p>
-      <div class="cta-row" style="margin-top:20px">
-        <a class="btn btn-wa js-wa" href="#" data-msg="AGENT - Hi Andrew, I'd like to become a Helpful AV agent.">WhatsApp "AGENT"</a>
+      <div class="cta-row">
+        <a class="btn btn-teal" href="order.html">Order</a>
+        <a class="btn btn-ghost" href="buy.html">Buy / pay</a>
       </div>
     </div>
-    <div class="earn">
-      <div>Each Starter Pack you sell <b>R500</b></div>
-      <div>Client on 15 Shorts a month <b>R100/mo</b></div>
-      <div>Client on a full month of Shorts <b>R200/mo</b></div>
+    <div class="card">
+      <h3>Business Print Pack</h3>
+      <div class="amt">R750 <small>once-off</small></div>
+      <ul>
+        <li>Job cards, quotes, invoices</li>
+        <li>NCR / carbon-book ready layouts</li>
+        <li>Business cards &amp; letterhead</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-teal" href="order.html">Order</a>
+        <a class="btn btn-ghost" href="buy.html">Buy / pay</a>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:40px">
+    <span class="kicker">Sample Shorts</span>
+    <h2>Videos like these, made for your business</h2>
+    <p class="lead">Tap a video to play with sound. Yours will show your own services and contact details.</p>
+    <div class="samples">
+      <div class="sample"><video src="videos/sample-1.mp4" poster="videos/sample-1.jpg" controls playsinline preload="none"></video><p>Arrival &amp; inspection<span>Workshop sample</span></p></div>
+      <div class="sample"><video src="videos/sample-2.mp4" poster="videos/sample-2.jpg" controls playsinline preload="none"></video><p>Oil service<span>Workshop sample</span></p></div>
+      <div class="sample"><video src="videos/sample-3.mp4" poster="videos/sample-3.jpg" controls playsinline preload="none"></video><p>Brakes<span>Workshop sample</span></p></div>
+      <div class="sample"><video src="videos/sample-4.mp4" poster="videos/sample-4.jpg" controls playsinline preload="none"></video><p>Diagnostics<span>Workshop sample</span></p></div>
+      <div class="sample"><video src="videos/sample-5.mp4" poster="videos/sample-5.jpg" controls playsinline preload="none"></video><p>Engine repairs<span>Workshop sample</span></p></div>
     </div>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <p><b style="color:var(--text)">Helpful AV</b> · Websites &amp; video Shorts for small businesses · WhatsApp <a href="#" class="js-wa" data-msg="Hi Andrew, I have a question about Helpful AV.">066 529 8510</a></p>
-  <p class="agent-chip" id="agentChip"></p>
-  <p style="margin-top:10px">© 2026 Helpful AV. Prices exclude VAT.</p>
-</div></footer>
-
-<a class="btn btn-wa float-wa js-wa" href="#" data-msg="Hi Andrew, I'd like the R2,000 Starter Pack (website + 15 Shorts)." aria-label="Order on WhatsApp">
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--text)">Helpful AV</b> · Websites &amp; video Shorts for small businesses</p>
+    <p style="margin-top:8px">WhatsApp Andrew: <a class="js-wa" href="#" data-msg="Hi Andrew, I have a question about Helpful AV.">066 529 8510</a>
+      · Email <a href="mailto:verkerkand@gmail.com">verkerkand@gmail.com</a>
+      · <a href="agent-pack/">Agent pack</a></p>
+    <p class="agent-chip" id="agentChip"></p>
+    <p style="margin-top:10px">© 2026 Helpful AV. Prices exclude VAT.</p>
+    <p class="marker">hav-site-v9</p>
+  </div>
+</footer>
+<!-- hav-site-v9 -->
+<a class="btn btn-wa float-wa js-wa" href="#" data-msg="Hi Andrew, I'd like to order from Helpful AV." aria-label="WhatsApp Helpful AV">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
-  Order
+  WhatsApp
 </a>
-
-<script>
-var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxUXB-qiQsHxUA3JhO_7IqDkiXPuwrjza_fKPRGfzL0ySULdXQrx7Ob81vVAQVcq6ah/exec";
-function havSend(f, subject, skipFiles, extra, done){
-  var btn = f.querySelector("button[type=submit]"), old = btn.textContent;
-  btn.disabled = true; btn.textContent = "Sending...";
-  var data = {subject: subject, fields: {}, files: []};
-  [].forEach.call(f.elements, function(el){
-    if (!el.name || el.type === "file" || el.type === "submit" || el.type === "button") return;
-    if (el.name.charAt(0) === "_" || el.disabled) return;
-    data.fields[el.name] = el.value;
-  });
-  for (var k in extra) data.fields[k] = extra[k];
-  var jobs = [];
-  if (!skipFiles) [].forEach.call(f.querySelectorAll("input[type=file]"), function(i){
-    [].forEach.call(i.files, function(x){
-      jobs.push(new Promise(function(res, rej){
-        var r = new FileReader();
-        r.onload = function(){ data.files.push({field: i.name, name: i.name + " - " + x.name, mimeType: x.type || "application/octet-stream", base64: String(r.result).split(",")[1] || ""}); res(); };
-        r.onerror = rej; r.readAsDataURL(x);
-      }));
-    });
-  });
-  Promise.all(jobs).then(function(){
-    return fetch(SCRIPT_URL, {method: "POST", mode: "no-cors", headers: {"Content-Type": "text/plain;charset=utf-8"}, body: JSON.stringify(data)});
-  }).then(function(){ done(); }).catch(function(){
-    btn.disabled = false; btn.textContent = old;
-    alert("Sorry, your order could not be sent. Please check your connection and try again, or WhatsApp/email us.");
-  });
-}
-(function(){
-  var WA = "27665298510";
-  // Agents share links like ...netlify.app/?agent=AG01 so their sales are credited
-  var agent = "";
-  try { agent = (new URLSearchParams(location.search).get("agent") || "").replace(/[^A-Za-z0-9-]/g,"").slice(0,12).toUpperCase(); } catch(e){}
-  try { if (agent) localStorage.setItem("hav_agent", agent); else agent = (localStorage.getItem("hav_agent") || "").replace(/[^A-Za-z0-9-]/g,"").slice(0,12).toUpperCase(); } catch(e){}
-  window.HAV_AGENT = agent;
-  if (agent) {
-    var chip = document.getElementById("agentChip");
-    chip.textContent = "Your Helpful AV agent: " + agent;
-    chip.style.display = "block";
-  }
-  document.querySelectorAll(".js-wa").forEach(function(a){
-    var msg = a.getAttribute("data-msg") || "Hi Andrew";
-    if (agent && msg.indexOf("AGENT -") !== 0) msg += " (Agent code: " + agent + ")";
-    a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
-    a.target = "_blank"; a.rel = "noopener";
-  });
-  // Order form: credit the agent
-  var code = agent || "direct", sfx = encodeURIComponent(agent ? "&agent=" + agent : "");
-  var ac = document.getElementById("agent_code"); if (ac) ac.value = code;
-  var subj = document.getElementById("fs_subject"); if (subj) subj.value = "New Helpful AV order - agent " + code;
-  var nx = document.getElementById("fs_next"); if (nx) nx.value = "https://verkerkand-cyber.github.io/helpful-av/?ordered=1" + (agent ? "&agent=" + agent : "") + "#order";
-  var oa = document.getElementById("orderAgent"); if (oa && agent) { oa.textContent = "Agent code: " + agent; oa.style.display = "block"; }
-  var f = document.getElementById("orderform"), LIMIT = 25*1024*1024;
-  if (f) {
-    if (location.search.indexOf("ordered=1") > -1) { f.hidden = true; document.getElementById(location.search.indexOf("bigfiles=1") > -1 ? "bigthanks" : "thanks").hidden = false; }
-    f.addEventListener("submit", function(e){
-      e.preventDefault();
-      if (!f.checkValidity()) { f.reportValidity(); return; }
-      if (f.elements["_honey"] && f.elements["_honey"].value) return;
-      ac.value = code;
-      var tot = 0, names = [];
-      [].forEach.call(f.querySelectorAll("input[type=file]"), function(i){ [].forEach.call(i.files, function(x){ tot += x.size; names.push(x.name + " (" + (x.size/1048576).toFixed(1) + "MB, " + i.name + ")"); }); });
-      var big = tot > LIMIT, extra = {}, subject = subj.value;
-      if (big) {
-        subject = "URGENT - CALL CLIENT - files too big to upload - agent " + code;
-        extra["files-too-big"] = names.join("; ") + " - total " + (tot/1048576).toFixed(1) + "MB";
-      }
-      havSend(f, subject, big, extra, function(){
-        f.hidden = true; var m = document.getElementById(big ? "bigthanks" : "thanks"); m.hidden = false; m.scrollIntoView({behavior:"smooth", block:"center"});
-      });
-    });
-  }
-  // Only one sample plays at a time
-  var vids = document.querySelectorAll(".sample video");
-  vids.forEach(function(v){ v.addEventListener("play", function(){ vids.forEach(function(o){ if(o!==v) o.pause(); }); }); });
-})();
-</script>
+<script src="js/site.js"></script>
 </body>
 </html>

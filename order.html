@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta name="google-site-verification" content="1bLGO5rfy8AbWthwLzcn-S9dSrTKiQFUab5hB_pKPio" />
+<!-- hav-site-v9 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order form | Helpful AV</title>
+<meta name="description" content="Order Website + 15 Shorts or the Business Print Pack. Upload logo and photos.">
+<meta property="og:title" content="Order form | Helpful AV">
+<meta property="og:description" content="Order Website + 15 Shorts or the Business Print Pack. Upload logo and photos.">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+
+</head>
+<body>
+<nav class="nav"><div class="wrap nav-inner">
+  <a class="logo" href="index.html">Helpful<span>AV</span></a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+  <div class="nav-tabs">
+      <a href="index.html">Home</a>
+      <a href="website.html">Website + 15 Shorts</a>
+      <a href="flyer.html">Flyer & print pack</a>
+      <a href="pitch.html">Sales pitch</a>
+      <a href="commissions.html">Commissions</a>
+      <a href="other-websites.html">Other websites</a>
+      <a href="order.html" class="active">Order form</a>
+      <a href="buy.html">Buy / pay</a>
+      <a href="contact.html">Contact us</a>
+  </div>
+  <a class="nav-cta js-wa" href="#" data-msg="Hi Andrew, I'd like to chat about Helpful AV.">WhatsApp</a>
+</div></nav>
+<div class="banner" aria-label="Helpful AV Shorts banner">
+  <div class="banner-label">Helpful AV Shorts</div>
+  <div class="banner-stage" id="bannerStage">
+    <video src="videos/sample-1.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-2.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-3.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-4.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/sample-5.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short1.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short2.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short3.mp4" muted loop playsinline preload="metadata"></video>
+    <video src="videos/short4.mp4" muted loop playsinline preload="metadata"></video>
+  </div>
+  <div class="banner-dots" id="bannerDots" aria-hidden="true"></div>
+</div>
+<div class="social-strip">
+  <div class="wrap">
+    <p class="kicker" style="text-align:center;display:block">Marketing demo</p>
+    <div class="social-grid">
+    <div class="social-col">
+      <h3>YouTube</h3>
+      <div class="phone-frame">
+        <video src="videos/sample-1.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="view-count"><span>Views</span><b data-views="1842">0</b></div>
+      </div>
+    </div>
+    <div class="social-col">
+      <h3>TikTok</h3>
+      <div class="phone-frame">
+        <video src="videos/short1.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="view-count"><span>Views</span><b data-views="3260">0</b></div>
+      </div>
+    </div>
+    <div class="social-col">
+      <h3>Instagram</h3>
+      <div class="phone-frame">
+        <video src="videos/sample-3.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="view-count"><span>Views</span><b data-views="2514">0</b></div>
+      </div>
+    </div>
+    </div>
+    <p class="caption">What your Shorts can look like as views grow · Demo only — not live stats for a named account</p>
+  </div>
+</div>
+
+<section class="page"><div class="wrap">
+  <span class="kicker">Order</span>
+  <h1>Order form</h1>
+  <p class="lead">Tell us about your business, choose a product, and upload your logo plus photos. Required fields sit at the top so we can call you back quickly.</p>
+  <p class="agent-chip" id="orderAgent"></p>
+  <div id="thanks" class="thanks" hidden><strong>Thank you for your order!</strong> We have received your details. Payment details will be sent to you by email shortly.</div>
+  <div id="bigthanks" class="thanks" hidden><strong>Thank you for your order!</strong> Your details were sent. Your files were too large, so we will call you to collect them.</div>
+  <form class="order" id="orderform" name="business-order" method="POST">
+    <input type="hidden" name="agent-code" id="agent_code" value="direct">
+    <input type="hidden" name="_subject" id="fs_subject" value="New Helpful AV order">
+    <p class="hp"><label>Don't fill this out: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+    <label for="bname">Company / business name</label>
+    <input id="bname" name="business-name" required>
+    <label for="cname">Owner / contact name</label>
+    <input id="cname" name="contact-name" required>
+    <label for="phone">Cell number</label>
+    <input id="phone" name="cell-number" type="tel" required pattern="[0-9+ ()-]{9,}" title="Please enter a valid cell number">
+    <label for="email">Email address</label>
+    <input id="email" name="email" type="email" required>
+    <label for="product">Product</label>
+    <select id="product" name="product" required>
+      <option value="">Choose a product</option>
+      <option>Business Print Pack (R750)</option>
+      <option>Website + 15 Video Shorts (R2,000)</option>
+    </select>
+    <label for="addr">Physical address</label>
+    <textarea id="addr" name="address" rows="2"></textarea>
+    <label for="links">Website / social links</label>
+    <textarea id="links" name="links" rows="2"></textarea>
+    <label for="services">Services offered</label>
+    <textarea id="services" name="services" rows="3"></textarea>
+    <label for="docs">Forms or documents needed</label>
+    <textarea id="docs" name="documents-needed" rows="3" placeholder="e.g. job cards, quotes, invoices, business cards, letterhead"></textarea>
+    <label for="colours">Preferred colours</label>
+    <input id="colours" name="colours">
+    <label for="notes">Any other notes</label>
+    <textarea id="notes" name="notes" rows="3"></textarea>
+    <label for="logo">Logo upload <small>(all files together max 25MB)</small></label>
+    <input id="logo" name="logo" type="file" accept="image/*,.pdf,.svg">
+    <label for="photo1">Photos of your business, work, vehicles or existing documents (5 to 10 photos) <small>(all files together max 25MB)</small></label>
+    <input id="photo1" name="photo1" type="file" accept="image/*,.pdf,.doc,.docx">
+    <input id="photo2" name="photo2" type="file" accept="image/*,.pdf,.doc,.docx">
+    <input id="photo3" name="photo3" type="file" accept="image/*,.pdf,.doc,.docx">
+    <input id="photo4" name="photo4" type="file" accept="image/*,.pdf,.doc,.docx">
+    <input id="photo5" name="photo5" type="file" accept="image/*,.pdf,.doc,.docx">
+    <input id="photo6" name="photo6" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden>
+    <input id="photo7" name="photo7" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden>
+    <input id="photo8" name="photo8" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden>
+    <input id="photo9" name="photo9" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden>
+    <input id="photo10" name="photo10" type="file" accept="image/*,.pdf,.doc,.docx" class="morephoto" hidden>
+    <button type="button" class="btn btn-ghost" id="addphotos" onclick="[].forEach.call(document.querySelectorAll('.morephoto'),function(i){i.hidden=false;});this.hidden=true;">Add more photos</button>
+    <p><small>Tip: phone photos are big, so if they're too large we'll call you to collect them. Total upload limit 25MB.</small></p>
+    <button class="btn btn-wa" type="submit" style="width:100%">Submit order</button>
+  </form>
+  <p class="note">Prefer to pay first? See <a href="buy.html" style="color:var(--teal)">Buy / pay</a>. Prefer WhatsApp? <a class="js-wa" href="#" data-msg="Hi Andrew, I'd like to place an order." style="color:var(--teal)">066 529 8510</a>.</p>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--text)">Helpful AV</b> · Websites &amp; video Shorts for small businesses</p>
+    <p style="margin-top:8px">WhatsApp Andrew: <a class="js-wa" href="#" data-msg="Hi Andrew, I have a question about Helpful AV.">066 529 8510</a>
+      · Email <a href="mailto:verkerkand@gmail.com">verkerkand@gmail.com</a>
+      · <a href="agent-pack/">Agent pack</a></p>
+    <p class="agent-chip" id="agentChip"></p>
+    <p style="margin-top:10px">© 2026 Helpful AV. Prices exclude VAT.</p>
+    <p class="marker">hav-site-v9</p>
+  </div>
+</footer>
+<!-- hav-site-v9 -->
+<a class="btn btn-wa float-wa js-wa" href="#" data-msg="Hi Andrew, I'd like to order from Helpful AV." aria-label="WhatsApp Helpful AV">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+  WhatsApp
+</a>
+<script src="js/site.js"></script>
+</body>
+</html>
