@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<!-- hav-shorts-v1 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local business Shorts | Helpful AV</title>
+<meta name="description" content="Watch short videos from local businesses in Johannesburg, Ekurhuleni, Emfuleni and more. Find a business near you.">
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=27">
+<style>
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.filters select{padding:12px 14px;border-radius:12px;border:1px solid #2e3340;background:#14171d;color:#f3f4f6;font:600 15px Inter,sans-serif;min-width:170px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.sc{background:#14171d;border:1px solid #2e3340;border-radius:18px;overflow:hidden}
+.sc video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;display:block}
+.sc .b{padding:12px 14px}
+.sc h3{font-size:17px;margin:0 0 4px}
+.sc .m{font-size:13px;color:#a8afbd}
+.sc .tag{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;background:#c6f432;color:#0f1115;border-radius:8px;padding:3px 8px}
+.sc a.c{display:block;margin-top:10px;font-weight:700;color:#c6f432}
+.empty{padding:30px;border:1px dashed #2e3340;border-radius:18px;color:#a8afbd;text-align:center}
+</style>
+</head>
+<body class="tab">
+<nav class="nav"><div class="wrap nav-inner">
+  <a class="logo" href="index.html">Helpful<span>AV</span></a>
+  <div class="nav-tabs">
+      <a href="index.html">Home</a>
+      <a href="website.html">Website + 15 Shorts</a>
+      <a href="flyer.html">Print-ready PDF Print Pack</a>
+      <a href="shorts.html" class="active">Local Shorts</a>
+      <a href="other-websites.html">Other websites</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
+    <a class="nav-cta js-wa" href="#" data-msg="Hi Jayden, I'd like my business listed on Local Shorts.">WhatsApp</a>
+  </div>
+</div></nav>
+<section class="page"><div class="wrap">
+  <span class="kicker">Local Shorts</span>
+  <h1>Find local businesses near you</h1>
+  <p class="lead">Short videos from real local businesses. Pick your area and what you're looking for.</p>
+  <div class="filters">
+    <select id="fMun" aria-label="Municipality"></select>
+    <select id="fSub" aria-label="Suburb"></select>
+    <select id="fCat" aria-label="Category"></select>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="card" style="margin-top:28px">
+    <h3>Want your business here?</h3>
+    <p class="lead" style="font-size:15px">Every Helpful AV Shorts pack can include a free listing on this page. 10 Christmas Shorts from R400.</p>
+    <div class="cta-row"><a class="btn js-wa" href="#" data-msg="Hi Jayden, I'd like my business listed on Local Shorts.">WhatsApp Jayden 066 239 2340</a></div>
+  </div>
+</div></section>
+<footer><div class="wrap"><p><b style="color:var(--text)">Helpful AV</b> · Websites &amp; video Shorts for small businesses · WhatsApp Jayden <a class="js-wa" href="#" data-msg="Hi Jayden">066 239 2340</a></p></div></footer>
+<script>
+/* To add a business: copy one line below and change it. Video file goes in the videos folder.
+   Only list businesses that have said OK. */
+var SHORTS = [
+ {name:"Alastair Auto Care", mun:"Emfuleni", sub:"Duncanville, Vereeniging", cat:"Car services", video:"videos/short1.mp4", wa:"27828018582", note:"Toyota specialists, all makes welcome"},
+ {name:"Alastair Auto Care", mun:"Emfuleni", sub:"Duncanville, Vereeniging", cat:"Car services", video:"videos/short2.mp4", wa:"27828018582", note:"Services, repairs and diagnostics"},
+ {name:"Alastair Auto Care", mun:"Emfuleni", sub:"Duncanville, Vereeniging", cat:"Car services", video:"videos/short3.mp4", wa:"27828018582", note:"37 years of Toyota experience"},
+ {name:"Helpful AV", mun:"Emfuleni", sub:"Vereeniging", cat:"Marketing & websites", video:"videos/promo-1.mp4", wa:"27662392340", note:"Websites and video Shorts for small businesses"}
+];
+var MUNS=["City of Johannesburg","Ekurhuleni","Emfuleni","Midvaal","Tshwane","Mogale City","Metsimaholo"];
+var CATS=["Car services","Restaurants & cafés","Beauty & hair","Cleaning & laundry","Building & repairs","Food & catering","Events & photography","Shops & boutiques","Marketing & websites","Other"];
+var fM=document.getElementById("fMun"),fS=document.getElementById("fSub"),fC=document.getElementById("fCat"),g=document.getElementById("grid");
+function opts(el,first,list){el.innerHTML='<option value="">'+first+'</option>'+list.map(function(x){return '<option>'+x+'</option>'}).join('')}
+opts(fM,"All areas",MUNS);opts(fC,"All categories",CATS);
+function subs(){var l=[];SHORTS.forEach(function(s){if((!fM.value||s.mun==fM.value)&&l.indexOf(s.sub)<0)l.push(s.sub)});opts(fS,"All suburbs",l.sort())}
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function draw(){var r=SHORTS.filter(function(s){return(!fM.value||s.mun==fM.value)&&(!fS.value||s.sub==fS.value)&&(!fC.value||s.cat==fC.value)});
+ g.innerHTML=r.length?r.map(function(s){return '<div class="sc"><video src="'+s.video+'" controls playsinline preload="metadata"></video><div class="b"><h3>'+esc(s.name)+'</h3><div class="m">'+esc(s.sub)+' · '+esc(s.mun)+'</div><div class="m">'+esc(s.note)+'</div><span class="tag">'+esc(s.cat)+'</span><a class="c" target="_blank" rel="noopener" href="https://wa.me/'+s.wa+'">WhatsApp them →</a></div></div>'}).join(''):'<div class="empty">No Shorts in this area yet. Be the first business listed here, WhatsApp Jayden on 066 239 2340.</div>'}
+fM.onchange=function(){subs();draw()};fS.onchange=draw;fC.onchange=draw;subs();draw();
+</script>
+<script src="js/site.js?v=25"></script>
+</body>
+</html>
